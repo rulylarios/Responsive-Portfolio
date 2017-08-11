@@ -1,92 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-	
-	<head>
-		
-		<meta charset="UTF-8">
-		
-		<title>Raul's Portfolio</title>
 
-		<link rel="stylesheet" href="assets/css/style.css">
-	
-	</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-	<body>
+<body>
 
-		<div class="top">
-			<header>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Your Name</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-				<div id= "relative1" style="background-color: #4aaaa5; text-align: center;vertical-align: middle; padding:13px 15px; width:170px;"> Raul O Larios </div>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-			</header>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-			<div id="relative2">
+    </section>
 
-			<a href="index.html">About</a>
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-			</div>
-			
-			<div id="relative3">
+        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
 
-			<a href="portfolio.html">Portfolio</a>
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
+</body>
 
-			</div>
-
-			<div id="relative4">
-			
-			<a href="contact.html">Contact</a>
-
-			</div>
-
-		</div>
-		
-		<section class="main">
-
-			<header>
-			
-				<h2 style='color: #4aaaa5'>Contact</h2>	
-		
-			</header> 
-			
-			<div class="container">
-  				<form action="/action_page.php">
-
-    			<label for="fname">Name</label>
-    			<input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    			<label for="lname">Email</label>
-    			<input type="text" id="lname" name="lastname" placeholder="Your email..">
-
-    			<label for="subject">Message</label>
-    			<textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
-
-   				 <input type="submit" value="Submit">
-
-  				</form>
-</div>
-
-		
-		</section>
-			
-		<div class="connect2">
-		
-				<h3 style='color: #4aaaa5'>Connect with Me</h3>
-
-			<a href="https://github.com/rulylarios" target="_blank">
-  			<img src="https://cdn2.iconfinder.com/data/icons/micon-social-pack/512/github2-128.png" alt="github" width= 50px height= 50px>
-			</a>
-			
-			<a href="https://www.linkedin.com/in/raul-o-larios-47927a126/" target="_blank">
-			<img src= "https://github.com/rulylarios/Basic-Portfolio/blob/master/assets/images/linkedin.png?raw=true" alt="linkedin" width= 50px height= 50px>
-			</a>
-			
-			<a href="https://stackoverflow.com/users/8303265/raul-larios" target="_blank">
-			<img src= "https://github.com/rulylarios/Basic-Portfolio/blob/master/assets/images/Stack_Overflow-128.png?raw=true" alt="stack overflow" width= 50px height= 50px>
-			</a>
-
-		</div>
-
-		<p class="bottom">Copyright2017RaulOLarios</p>
-
-
-	</body>
+</html>
